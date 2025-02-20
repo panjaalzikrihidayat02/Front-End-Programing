@@ -7,11 +7,7 @@ export default function HomePage() {
   return (
     <div className={`pt-16 min-h-screen transition-all bg-gray-100 dark:bg-gray-900 text-black dark:text-white`}>
       {/* Navbar */}
-      <nav className="flex justify-between items-center p-6 bg-white dark:bg-gray-800 shadow-md">
-        <div className="flex items-center space-x-6">
-          <Menu className="cursor-pointer" />
-        </div>
-      </nav>
+      
 
       {/* Hero Section */}
       <header className="flex flex-col items-center text-center py-20 px-6">

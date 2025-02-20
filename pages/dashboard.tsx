@@ -25,7 +25,7 @@ export default function Dashboard() {
           <Menu className="cursor-pointer" onClick={() => setSidebarOpen(!sidebarOpen)} />
         </div>
         <ul className="space-y-4">
-          {["Dashboard", "Profile", "Reports", "Settings"].map((menu) => (
+          {["Dashboard", "Data Pembelian", "Data Transaksi", "Data Penjualan"].map((menu) => (
             <li
               key={menu}
               className={`flex items-center space-x-2 p-3 rounded-lg cursor-pointer transition-all ${
@@ -34,9 +34,9 @@ export default function Dashboard() {
               onClick={() => setActiveMenu(menu)}
             >
               {menu === "Dashboard" && <Home />}
-              {menu === "Profile" && <User />}
-              {menu === "Reports" && <BarChart />}
-              {menu === "Settings" && <Settings />}
+              {menu === "Data Transaksi" && <BarChart />}
+              {menu === "Data Penjualan" && <BarChart />}
+              {menu === "Data Pembelian" && <BarChart />}
               <span className={sidebarOpen ? "block" : "hidden"}>{menu}</span>
             </li>
           ))}
