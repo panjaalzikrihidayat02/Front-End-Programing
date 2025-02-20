@@ -10,7 +10,7 @@ export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredResults, setFilteredResults] = useState<string[]>([]);
 
-  const menuItems = ["Home", "Dashboard", "Profile", "Setting", "Report", "user"];
+  const menuItems = ["Home", "Produk", "Profile", "Setting", "Report", "user"];
 
   useEffect(() => {
     const handleScroll = () => {
